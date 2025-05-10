@@ -1,0 +1,143 @@
+/* Base Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    color: #b0bec5;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #4db6ac;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4db6ac;
+    text-decoration: none;
+  }
+  
+  /* About Section */
+  .about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4db6ac;
+    box-shadow: 0 0 20px rgba(77, 182, 172, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .highlight {
+    color: #4db6ac;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust Navbar links for small screens */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .nav-links a {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+  
+    /* Adjust About Section Layout */
+    .about-hero {
+      flex-direction: column;
+      min-height: 60vh;
+      padding: 2rem 1rem;
+    }
+  
+    .about-container {
+      text-align: center;
+    }
+  
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+    }
+  
+    /* Adjust About Text */
+    .about-text {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Smaller screens (e.g., mobile phones) */
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .about-text h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
